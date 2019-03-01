@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='request_x',  # Required
+    name='requestx',  # Required
 
     version='0.0.2',  # Required
-    packages=['request_x'],
-    install_requires=['request'],  # Optional
+    packages=['requestx'],
+    install_requires=['requests'],  # Optional
 )

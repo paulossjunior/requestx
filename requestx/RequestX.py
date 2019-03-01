@@ -1,4 +1,4 @@
-class Request_X (object):
+class RequestX (object):
 
     def __init__(self):
         self.headers_json = {'Content-type': 'application/json', 'Accept': 'application/json'}

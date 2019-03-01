@@ -9,8 +9,7 @@ class RequestX (object):
         return requests.post(url,json=data,headers=self.headers_json)
 
     def get(self,url):
-        response = requests.get(url,headers=self.headers_json)
-        return response.json()
+        return requests.get(url,headers=self.headers_json)
         
     def put_uri_list (self,data, url):
         return requests.put(url, data=data,headers=self.headers_uri_list)

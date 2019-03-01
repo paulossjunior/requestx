@@ -5,14 +5,12 @@ class RequestX (object):
         self.headers_uri_list = {'Content-type': 'text/uri-list', 'Accept': 'application/json'}
 
     def __post(self,data, url):
-        response = requests.post(url,json=data,headers=self.headers_json)
-        return response.json()
+        return requests.post(url,json=data,headers=self.headers_json)
 
     def __get(self,url):
         response = requests.get(url,headers=self.headers_json)
         return response.json()
         
     def __put_uri_list (self,data, url):
-        return response = requests.put(url, data=data,headers=self.headers_uri_list)
-        return response.json()
+        return requests.put(url, data=data,headers=self.headers_uri_list)
     

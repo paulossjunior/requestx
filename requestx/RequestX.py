@@ -7,6 +7,9 @@ class RequestX (object):
 
     def post(self,data, url):
         return requests.post(url,json=data,headers=self.headers_json)
+    
+    def patch(self,data, url):
+        return requests.patch(url,json=data,headers=self.headers_json)
 
     def get(self,url):
         return requests.get(url,headers=self.headers_json)
